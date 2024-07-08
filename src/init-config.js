@@ -19,6 +19,11 @@ const inquirePlatforms = async () => {
         checked: true,
       },
       {
+        name: 'HarmonyOS',
+        value: 'harmony',
+        checked: true,
+      },
+      {
         name: 'CSS',
         value: 'css',
       },
@@ -63,6 +68,11 @@ async function initializeConfig() {
   if (platforms.includes('android')) {
     config.android = {
       outputDirectory: 'android/app/src/main/res/',
+    };
+  }
+  if (platforms.includes('harmony')) {
+    config.harmony = {
+      outputDirectory: 'harmony/AppScope/resources/',
     };
   }
   if (platforms.includes('css')) {

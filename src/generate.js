@@ -1,14 +1,15 @@
 const path = require('path');
 const fs = require('fs-extra');
 const fg = require('fast-glob');
-const parseColorManifest = require('./parse-color-manifest');
+const parseColorManifest = require('@klarna/platform-colors/src/parse-color-manifest');
 const { formatName } = require('./utils');
 
 const generators = {
-  ios: require('./templates/ios'),
-  android: require('./templates/android'),
-  css: require('./templates/css'),
-  javascript: require('./templates/javascript'),
+  harmony: require('./templates/harmony'),
+  ios: require('@klarna/platform-colors/src/templates/ios'),
+  android: require('@klarna/platform-colors/src/templates/android'),
+  css: require('@klarna/platform-colors/src/templates/css'),
+  javascript: require('@klarna/platform-colors/src/templates/javascript'),
 };
 
 async function generate(config) {
