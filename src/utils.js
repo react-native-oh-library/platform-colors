@@ -20,6 +20,7 @@ function formatName(platform, config, name = '') {
 
   switch (platform) {
     case 'android':
+    case 'harmony':
       return prefix ?
         `${snakeCase(prefix)}_${snakeCase(name)}` :
         snakeCase(name);

@@ -1,27 +1,36 @@
 {
-  "name": "@klarna/platform-colors",
-  "version": "0.4.0",
+  "name": "@react-native-oh-tpl/platform-colors",
+  "version": "0.4.0-0.0.1",
   "description": "Generate platform native colors for iOS, Android & Web",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "bin": {
-    "platform-colors": "bin/platform-colors"
+    "oh-platform-colors": "bin/platform-colors"
   },
   "scripts": {
     "test": "jest src"
   },
-  "repository": "github:klarna-incubator/platform-colors",
-  "homepage": "https://github.com/klarna-incubator/platform-colors",
+  "repository": { "type": "git", "url": "https://github.com/react-native-oh-library/platform-colors.git" },
+  "homepage": "https://github.com/react-native-oh-library/platform-colors",
   "bugs": {
     "url": "https://github.com/klarna-incubator/platform-colors/issues"
   },
   "license": "Apache-2.0",
+  "harmony": {
+    "alias": "@klarna/platform-colors",
+    "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
+  },
   "keywords": [
     "react-native",
     "react",
     "mobile",
     "ios",
     "android",
+    "harmony",
     "ui",
     "dark-mode",
     "accessibility"
@@ -45,7 +54,8 @@
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.0.0",
     "inquirer": "^8.2.0",
-    "xmlbuilder2": "^3.0.2"
+    "xmlbuilder2": "^3.0.2",
+    "@klarna/platform-colors": "0.4.0"
   },
   "devDependencies": {
     "jest": "^27.4.7",
