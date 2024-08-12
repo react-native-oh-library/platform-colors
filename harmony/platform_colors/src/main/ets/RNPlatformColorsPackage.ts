@@ -22,15 +22,15 @@
  * SOFTWARE.
  */
 
-import type { TurboModule, TurboModuleContext, } from '@rnoh/react-native-openharmony/ts';
-import { RNPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
+import type { UITurboModule, UITurboModuleContext, } from '@rnoh/react-native-openharmony/ts';
+import { RNPackage, UITurboModuleFactory } from '@rnoh/react-native-openharmony/ts';
 import { TM } from '@rnoh/react-native-openharmony/generated/ts';
-import { KLAPlatformColorsTurboModule } from './KLAPlatformColorsTurboModule';
+import { RNPlatformColorsTurboModule } from './RNPlatformColorsTurboModule';
 
-class KLAPlatformColorsTurboModulesFactory extends TurboModulesFactory {
-  createTurboModule(name: string): TurboModule | null {
+class RNPlatformColorsTurboModulesFactory extends UITurboModuleFactory {
+  createTurboModule(name: string): UITurboModule | null {
     if (name === TM.KLAPlatformColors.NAME) {
-      return new KLAPlatformColorsTurboModule(this.ctx);
+      return new RNPlatformColorsTurboModule(this.ctx);
     }
     return null;
   }
@@ -40,8 +40,8 @@ class KLAPlatformColorsTurboModulesFactory extends TurboModulesFactory {
   }
 }
 
-export class KLAPlatformColorsPackage extends RNPackage {
-  createTurboModulesFactory(ctx: TurboModuleContext): TurboModulesFactory {
-    return new KLAPlatformColorsTurboModulesFactory(ctx);
+export class RNPlatformColorsPackage extends RNPackage {
+  createUITurboModuleFactory(ctx: UITurboModuleContext): UITurboModuleFactory {
+    return new RNPlatformColorsTurboModulesFactory(ctx);
   }
 }
