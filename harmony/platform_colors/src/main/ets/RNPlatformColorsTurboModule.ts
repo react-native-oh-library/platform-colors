@@ -22,11 +22,12 @@
  * SOFTWARE.
  */
 
-import { TurboModule } from '@rnoh/react-native-openharmony/ts';
+import { UITurboModule } from '@rnoh/react-native-openharmony/ts';
 import { TM } from '@rnoh/react-native-openharmony/generated/ts';
 import Logger from './Logger';
 
-export class KLAPlatformColorsTurboModule extends TurboModule implements TM.KLAPlatformColors.Spec {
+export class RNPlatformColorsTurboModule extends UITurboModule implements TM.KLAPlatformColors.Spec {
+  // 校验是否rgba格式的颜色值
   private rgbaReg = /^rgba\((\d{1,3}\,){3}\d{1,3}\)$/;
 
   public resolveColor(color: string): Promise<string> {
