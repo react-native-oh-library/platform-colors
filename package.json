@@ -1,7 +1,7 @@
 {
   "name": "@react-native-oh-tpl/platform-colors",
   "version": "0.4.0-0.0.1",
-  "description": "Generate platform native colors for iOS, Android, HarmonyOS & Web",
+  "description": "Generate platform native colors for iOS, Android & Web",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "bin": {
@@ -10,13 +10,10 @@
   "scripts": {
     "test": "jest src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/react-native-oh-library/platform-colors.git"
-  },
+  "repository": { "type": "git", "url": "https://github.com/react-native-oh-library/platform-colors.git" },
   "homepage": "https://github.com/react-native-oh-library/platform-colors",
   "bugs": {
-    "url": "https://github.com/react-native-oh-library/platform-colors/issues"
+    "url": "https://github.com/klarna-incubator/platform-colors/issues"
   },
   "license": "Apache-2.0",
   "harmony": {

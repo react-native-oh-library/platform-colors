@@ -1,2 +1,2 @@
-export * from './src/main/ets/RNPlatformColorsPackage';
-export * from './src/main/ets/RNPlatformColorsTurboModule';
+export * from './src/main/ets/KLAPlatformColorsPackage';
+export * from './src/main/ets/KLAPlatformColorsTurboModule';
