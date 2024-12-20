@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "platform-colors",
+        "License": "Apache License",
+        "License File": "https://github.com/react-native-oh-library/platform-colors/blob/sig/LICENSE",
+        "Version Number": "0.4.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/react-native-oh-library/platform-colors",
+        "Description": "Generate platform native colors for iOS, Android, HarmonyOS & Web"
+    }
+]
